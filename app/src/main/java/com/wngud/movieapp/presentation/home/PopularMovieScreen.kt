@@ -1,4 +1,4 @@
-package com.wngud.movieapp.presentation
+package com.wngud.movieapp.presentation.home
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
@@ -14,6 +14,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.wngud.movieapp.presentation.components.MovieItem
+import com.wngud.movieapp.presentation.movielist.MovieListState
+import com.wngud.movieapp.presentation.movielist.MovieListUiEvent
 import com.wngud.movieapp.util.Category
 
 @Composable

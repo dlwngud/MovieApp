@@ -1,4 +1,4 @@
-package com.wngud.movieapp.presentation
+package com.wngud.movieapp.presentation.home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -34,6 +34,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.wngud.movieapp.R
+import com.wngud.movieapp.presentation.movielist.MovieListUiEvent
+import com.wngud.movieapp.presentation.movielist.MovieListViewModel
 import com.wngud.movieapp.util.Screen
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -100,11 +102,13 @@ fun BottomNavigationBar(
     bottomNavController: NavController,
     onEvent: (MovieListUiEvent) -> Unit
 ) {
+    // 목록
     val items = listOf(
         BottomItem(title = stringResource(R.string.popular), icon = Icons.Rounded.Movie),
         BottomItem(title = stringResource(R.string.upcoming), icon = Icons.Rounded.Upcoming)
     )
 
+    // 선택
     val selected = rememberSaveable {
         mutableIntStateOf(0)
     }

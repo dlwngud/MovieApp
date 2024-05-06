@@ -1,5 +1,7 @@
 package com.wngud.movieapp.data.remote
 
+import androidx.core.os.BuildCompat
+import com.wngud.movieapp.BuildConfig
 import com.wngud.movieapp.data.remote.respond.MovieListDto
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -17,6 +19,6 @@ interface MovieApi {
     companion object {
         const val BASE_URL = "https://api.themoviedb.org/3/"
         const val IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500"
-        const val API_KEY = "dbfdd56c40da028b4b0aa0f6ae55d838"
+        const val API_KEY = BuildConfig.API_KEY
     }
 }

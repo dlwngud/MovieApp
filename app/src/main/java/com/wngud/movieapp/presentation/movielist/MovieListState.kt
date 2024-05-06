@@ -1,4 +1,4 @@
-package com.wngud.movieapp.presentation
+package com.wngud.movieapp.presentation.movielist
 
 import com.wngud.movieapp.domain.model.Movie
 

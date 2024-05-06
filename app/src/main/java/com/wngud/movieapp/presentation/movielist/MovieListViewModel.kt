@@ -1,4 +1,4 @@
-package com.wngud.movieapp.presentation
+package com.wngud.movieapp.presentation.movielist
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
